@@ -1,14 +1,9 @@
-# SwasthyaChain : Health Records Management Using Blockchain
+# HealthChain: Health Records Management Using Blockchain
 
 
 ## Introduction
 The aim of this framework is firstly to implement blockchain technology for EHR and secondly to provide secure storage of electronic records by defining granular access rules for the users of the proposed framework. Moreover, this framework also discusses the scalability problem faced by the blockchain technology in general via use of off-chain storage of the records. This framework provides the EHR system with the benefits of having a scalable, secure and integral blockchain-based solution.
 <!-- TABLE OF CONTENTS -->
-
-
-## Application Demo Video  
-
-[![Demo](https://raw.githubusercontent.com/SuyashMore/SwasthyaChain/master/images/YT.png)](https://youtu.be/ieBG1Hj8naA)
 
 
 ## Installation
@@ -77,7 +72,6 @@ The projects requires NodeJS and npm to work. Instructions to install all other 
   
 1. Open new Terminal and deploy contracts using `truffle migrate`
 2. Copy deployed contract address to src/app.js 
-![alt text](https://raw.githubusercontent.com/SuyashMore/SwasthyaChain/master/images/ganace-contracct.png)
 
 ```js
 // app/src/app.js  line number 11
@@ -92,9 +86,8 @@ var agentContractAddress = '0x75E115394aacC7c6063E593B9292CB9417E4cbeC';
 #### 1. Connecting Metamask to our local blockchain
   - Connect metamask to localhost:8485
   - Click on import account
-  ![alt text](https://raw.githubusercontent.com/SuyashMore/SwasthyaChain/master/images/meta-1.png)
   - Select any account from ganache and copy the private key to import account into metaMask
-  ![alt text](https://raw.githubusercontent.com/SuyashMore/SwasthyaChain/master/images/con-g1.png)
+  
 
 #### 2. Starting IPFS 
   - Start the IPFS Desktop Application
