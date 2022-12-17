@@ -1,0 +1,314 @@
+/* html {
+    height: 100%;
+  } */
+  /* body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  } */
+  
+  .login-box {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    border-radius: 10%;
+    /* padding: 16px 32px; */
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    /* bottom: 5%; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color:black; 
+    color: white; 
+    border: 2px solid  #03e9f4;
+  }
+  
+  .button1:hover {
+    background-color: #03e9f4;
+    color: white;
+  }
+  
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+   
+
+   * {
+    margin:0;
+    padding:0;
+  }
+  body {
+     /* background-color: #159852; */
+
+    font-family: 'Raleway', sans-serif;
+  }
+  #ribbon {
+    position:absolute;
+    background-color:red;
+    color:white;
+    top:20px;
+    left:-30px;
+    width:160px;
+    transform:rotate(-45deg);
+    text-align:center;
+  }
+  #container {
+    position:relative;
+    width:100%;
+    /* margin:%; */
+    background-color:black;
+    box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  }
+  #container > nav {
+    width:100%;
+    display:flex;
+    max-height:60px;
+  }
+  #logo {
+    line-height:60px;
+    font-size:30px;
+    padding: 0 50px;
+    color: white;
+    width:40%;
+    letter-spacing:2px;
+    text-shadow:2px 2px 5px;
+  }
+  #container > nav > ul {
+    margin:0;
+    
+    list-style-type:none;
+    display:flex;
+    position:absolute;
+      right:50px;
+  /*   min-width:60%; */
+  }
+  #container > nav > ul > li {
+    line-height:60px;
+    margin: 0 0px;
+    padding:0;
+    text-align:center;
+    display:inline-block;
+    
+  /*   background-color:green; */
+    min-width:120px;
+  
+  } 
+  #container > nav > ul > li > a {
+    position:relative;
+  /*   background-color:red; */
+      margin: 0 20px;
+      color:white;
+  }
+  #container > nav > ul > li:hover {
+    border-bottom: 2px solid white;
+    background-color:#2ebd0e;
+  }
+  #container > nav > ul > .dropdown:hover {
+    border-bottom:none;
+  }
+  #container > nav > ul > .dropdown:hover >  .dd
+  {
+    display:block;
+  }
+  .dropdown:hover > a .fa-caret-down {
+    display:none;
+  }
+  a {
+    text-decoration:none;
+  
+  }
+  
+  #container > nav > ul > li > div {
+    
+    position:absolute;
+    padding: 0 10px;
+    background-color:black;
+    display:none;
+    background-color:aliceblue;
+    min-width:100px;
+  }
+  
+  #container > nav > ul > li > div > ul {
+    margin:0px 0 10px 0;
+    padding:0;
+    list-style:none;
+  }
+  
+  #up_arrow {
+    position:relative;
+    width:20px;
+    height:20px;
+    left:42%;
+    top:-10px;
+    background-color:aliceblue;
+    transform:rotate(45deg);
+  }
+  #container > nav > ul > li> div > ul > li:hover {
+    background-color:rgba(0,0,0,0.2);
+  }
+  #container > nav > ul > li > div > ul > li > a {
+    padding : 5px;
+      color:black;
+  }
